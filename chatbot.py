@@ -1,1 +1,3 @@
-input("What does TOMAKAIROS mean?")
+TOMAKAIROS = input("To obtain every opportunity.")
+
+print(TOMAKAIROS)
