@@ -1,11 +1,11 @@
 print("Hello")
 
 botName = "Jarvis"
-bot = botName + ": "
+bot = "\n" + botName + ": "
 
 while True:
 
-    why = input(bot + "Why are you building this?")
+    why = input(bot + "Why are you building this?\nYou: ")
 
     why = why.strip().lower()
 
@@ -18,6 +18,6 @@ while True:
     elif why == "idk":
         print(bot + "Go figure it out!")
     elif why == "":
-        print("say something...i'm giving up on you.\n")
+        print(bot + "say something...i'm giving up on you.")
     else:
         print(bot + "awkward...")
