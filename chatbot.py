@@ -14,6 +14,8 @@ def get_response(answer):
     else:
         return "awkward..."
 
+#  return stops the function and optionally sends a value back, without printing it.
+
 history = []
 
 while True:
