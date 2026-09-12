@@ -4,26 +4,34 @@ botName = "Jarvis"
 bot = "\n" + botName + ": "
 answerCount = 0
 
+def get_response(answer):
+    if answer == "to learn" or answer == "learn":
+        return "You're on the right path."
+    elif answer == "idk":
+        return "Go figure it out!"
+    elif answer == "":
+        return "say something...i'm giving up on you." 
+    else:
+        return "awkward..."
+
+history = []
+
 while True:
 
     why = input(bot + "Why are you building this?\nYou: ")
 
     why = why.strip().lower()
+    history.append(why)
 
     if why == "quit":
         print(bot + "Goodbye...")
         break
-        
+    
     if why != "":
         answerCount = answerCount + 1
-    
-    if why == "to learn" or why == "learn":
-        print(bot + "You're on the right path.")
-    elif why == "idk":
-        print(bot + "Go figure it out!")
-    elif why == "":
-        print(bot + "say something...i'm giving up on you.") 
-    else:
-        print(bot + "awkward...")
 
-    print(str(answerCount) + "\n")
+    response = get_response(why)
+
+    print("\n" + str(answerCount))
+    print(bot + response)
+    print(history)
