@@ -29,3 +29,4 @@ while True:
         break
     
     print(history)
+    print("\n" + count)
