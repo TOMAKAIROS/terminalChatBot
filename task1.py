@@ -13,8 +13,6 @@ def maintenance_question(myAnswer):
     elif myAnswer != "":
         return "Let's try this again...\n"
     else:
-        history.append(myAnswer)
-        count += 1
         return "Maintenance Recorded"
 
 while True:
@@ -27,6 +25,9 @@ while True:
 
     if myAnswer == "quit":
         break
+    else:
+        history.append(myAnswer)
+        count += 1
     
     print(history)
-    print("\n" + count)
+    print("\n" + str(count))
