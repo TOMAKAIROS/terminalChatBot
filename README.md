@@ -38,3 +38,6 @@ Type quit to exit.
 ## Status
 
 Work in progress as I re-learn fundamentals and add features.
+
+## Tasks
+- [Task 1: Add Bot Replies](task1.md)
