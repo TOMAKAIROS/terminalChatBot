@@ -27,3 +27,5 @@ while True:
 
     if myAnswer == "quit":
         break
+    
+    print(history)
